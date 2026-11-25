@@ -90,7 +90,8 @@ a:focus-visible {
   width: 100%;
   max-width: 77.5rem;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .visuellement-cache {
@@ -302,29 +303,61 @@ a:focus-visible {
 
 .bande__carte {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-radius: 1.4rem;
   background: #fff;
   box-shadow: 0 18px 40px rgba(26, 30, 33, 0.1);
+  overflow: hidden;
 }
 
-.bande article {
-  padding: 2.1rem 2.25rem;
+/* Un volet « Au quotidien » : toute la carte est un lien vers sa page. */
+.volet {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.9rem 1.8rem;
   border-left: 1px solid var(--trait);
+  color: var(--texte);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
 }
 
-.bande article:first-child {
+.volet:first-child {
   border-left: 0;
 }
 
-.bande h3 {
-  margin-top: 0.4rem;
+.volet:hover {
+  background: #faf8f3;
+}
+
+.volet:focus-visible {
+  outline-offset: -3px;
+  border-radius: 1.2rem;
+}
+
+.volet h3 {
   font-size: 1.7rem;
 }
 
-.bande article p:last-child {
+.volet p {
   margin-top: 0.5rem;
+  margin-bottom: 1.1rem;
   font-size: 1.0625rem;
+}
+
+.volet__suite {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--ambre-fonce);
+}
+
+.volet__suite::after {
+  content: "\00a0→";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.volet:hover .volet__suite::after {
+  transform: translateX(0.25rem);
 }
 
 /* Secteurs */
@@ -385,6 +418,148 @@ a:focus-visible {
   color: var(--texte-sur-nuit);
 }
 
+/* Pages de volets (séjours, chambres, ménage, réparations) */
+
+.haut--volet {
+  padding-bottom: 13rem;
+}
+
+.volet-tete {
+  padding-top: 3rem;
+}
+
+.fil {
+  font-size: 0.975rem;
+  color: var(--texte-sur-nuit);
+}
+
+.fil a {
+  color: var(--ambre);
+  text-underline-offset: 4px;
+}
+
+.fil span {
+  margin: 0 0.35rem;
+  opacity: 0.6;
+}
+
+.volet-tete h1 {
+  margin-top: 1rem;
+  max-width: 46rem;
+  font-size: clamp(2.4rem, 5vw, 3.75rem);
+  color: #fff;
+  text-wrap: balance;
+}
+
+.volet-tete__chapo {
+  margin-top: 1.25rem;
+  max-width: 41rem;
+  font-size: 1.25rem;
+  color: var(--texte-sur-nuit);
+}
+
+.capture {
+  position: relative;
+  margin-top: -9.5rem;
+}
+
+.capture__cadre {
+  overflow: hidden;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 22px 50px rgba(26, 30, 33, 0.22);
+}
+
+.capture__barre {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.8rem 1.1rem;
+  background: #eceae4;
+  border-bottom: 1px solid var(--trait);
+}
+
+.capture__barre span {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #c9c5ba;
+}
+
+.capture__barre b {
+  margin-left: 0.9rem;
+  padding: 0.15rem 1.4rem;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #6b7379;
+}
+
+.capture__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Emplacement temporaire, en attendant la vraie capture d'écran. */
+.capture__vide {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  padding: 1.5rem;
+  background: repeating-linear-gradient(135deg, rgba(26, 30, 33, 0.045) 0 2px, transparent 2px 16px), #f7f5f0;
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #6b7379;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5.5rem;
+}
+
+.point h2 {
+  margin-top: 0.5rem;
+  font-size: 1.85rem;
+}
+
+.point p:last-child {
+  margin-top: 0.6rem;
+}
+
+.autres {
+  padding: 4.5rem 0 5.5rem;
+  border-top: 1px solid #dedad2;
+}
+
+.autres h2 {
+  margin-top: 0.5rem;
+  font-size: clamp(1.9rem, 3.4vw, 2.5rem);
+}
+
+.autres__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.volet--carte {
+  border: 1px solid var(--trait);
+  border-radius: 1.2rem;
+  background: #fff;
+}
+
+.volet--carte:first-child {
+  border-left: 1px solid var(--trait);
+}
+
 /* Pied de page */
 
 .pied {
@@ -437,18 +612,28 @@ a:focus-visible {
     height: 26rem;
   }
 
-  .bande__carte,
-  .cartes {
-    grid-template-columns: 1fr;
+  .bande__carte {
+    grid-template-columns: 1fr 1fr;
   }
 
-  .bande article {
+  .bande__carte .volet:nth-child(odd) {
     border-left: 0;
+  }
+
+  .bande__carte .volet:nth-child(n + 3) {
     border-top: 1px solid var(--trait);
   }
 
-  .bande article:first-child {
-    border-top: 0;
+  .cartes,
+  .points,
+  .autres__grille {
+    grid-template-columns: 1fr;
+  }
+
+  .points {
+    gap: 2.25rem;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
   }
 
   .carte .photo {
@@ -463,7 +648,8 @@ a:focus-visible {
   }
 
   .contenu {
-    padding: 0 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .haut {
@@ -494,6 +680,35 @@ a:focus-visible {
     font-size: 0.95rem;
   }
 
+  .bande__carte {
+    grid-template-columns: 1fr;
+  }
+
+  .bande__carte .volet {
+    border-left: 0;
+    border-top: 1px solid var(--trait);
+  }
+
+  .bande__carte .volet:first-child {
+    border-top: 0;
+  }
+
+  .haut--volet {
+    padding-bottom: 8rem;
+  }
+
+  .volet-tete {
+    padding-top: 1.5rem;
+  }
+
+  .capture {
+    margin-top: -5.5rem;
+  }
+
+  .capture__barre b {
+    display: none;
+  }
+
   .secteurs {
     padding: 4rem 0 4.5rem;
   }
@@ -508,7 +723,9 @@ a:focus-visible {
     scroll-behavior: auto;
   }
 
-  .pilule {
+  .pilule,
+  .volet,
+  .volet__suite::after {
     transition: none;
   }
 }
