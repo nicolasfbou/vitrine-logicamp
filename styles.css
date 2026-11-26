@@ -241,20 +241,30 @@ a:focus-visible {
 
 /* Photos */
 
+/* Quatre photos, une par volet : chacune mène à sa page. */
 .mosaique {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
   height: 32.2rem;
 }
 
 .cadre {
   position: relative;
+  display: block;
   min-height: 0;
+  overflow: hidden;
+  border-radius: 1.4rem;
 }
 
 .cadre .photo {
   height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.cadre:hover .photo {
+  transform: scale(1.04);
 }
 
 .photo {
@@ -267,11 +277,19 @@ a:focus-visible {
 
 /* Cadrage de chaque photo dans son emplacement. */
 .photo--camp {
-  object-position: 66% center;
+  object-position: 58% 35%;
 }
 
 .photo--releve {
-  object-position: 68% center;
+  object-position: 35% center;
+}
+
+.photo--menage {
+  object-position: 45% 30%;
+}
+
+.photo--technicien {
+  object-position: 45% 35%;
 }
 
 .photo--minier {
@@ -282,9 +300,10 @@ a:focus-visible {
   object-position: center 25%;
 }
 
+/* En bas à gauche, pour ne jamais couvrir un visage. */
 .etiquette {
   position: absolute;
-  top: 1.1rem;
+  bottom: 1.1rem;
   left: 1.1rem;
   padding: 0.4rem 1.1rem;
   border-radius: 999px;
@@ -807,7 +826,7 @@ a:focus-visible {
   }
 
   .mosaique {
-    height: 26rem;
+    height: 34rem;
   }
 
   .bande__carte {
@@ -892,17 +911,18 @@ a:focus-visible {
   }
 
   .mosaique {
-    height: 17rem;
+    height: 17.5rem;
     gap: 0.6rem;
   }
 
-  .photo {
+  .photo,
+  .cadre {
     border-radius: 1rem;
   }
 
   .etiquette {
-    top: 0.7rem;
-    left: 0.7rem;
+    bottom: 0.6rem;
+    left: 0.6rem;
     padding: 0.3rem 0.85rem;
     font-size: 0.95rem;
   }
@@ -957,7 +977,8 @@ a:focus-visible {
 
   .pilule,
   .volet,
-  .volet__suite::after {
+  .volet__suite::after,
+  .cadre .photo {
     transition: none;
   }
 }
