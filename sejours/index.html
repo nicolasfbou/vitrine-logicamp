@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Séjours — Logicamp</title>
+  <meta name="description" content="Suivi des séjours dans Logicamp : arrivées et départs du jour, disponibilité validée, état des chambres mis à jour automatiquement et nuitées par entreprise et par projet.">
+  <link rel="canonical" href="https://logicamp.ca/sejours/">
+  <meta name="theme-color" content="#1a1e21">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/logo-logicamp.png">
+  <link rel="apple-touch-icon" href="/images/logo-logicamp.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CA">
+  <meta property="og:site_name" content="Logicamp">
+  <meta property="og:url" content="https://logicamp.ca/sejours/">
+  <meta property="og:title" content="Séjours — Logicamp">
+  <meta property="og:description" content="Suivi des séjours dans Logicamp : arrivées et départs du jour, disponibilité validée, état des chambres mis à jour automatiquement et nuitées par entreprise et par projet.">
+
+  <link rel="preload" href="/fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="entete-fond">
+    <div class="entete contenu">
+      <a class="marque" href="/"><img class="marque__logo" src="/images/logo-logicamp.png" alt="" width="44" height="44">Logicamp</a>
+      <nav class="navigation" aria-label="Navigation principale">
+        <a href="/#quotidien">Au quotidien</a>
+        <a href="/#secteurs">Secteurs</a>
+        <a href="https://logicamp.app">Connexion</a>
+        <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="haut haut--volet">
+      <section class="volet-tete contenu">
+        <div class="volet-tete__texte">
+          <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Séjours</p>
+          <h1>Les séjours, de l’arrivée au départ</h1>
+          <p class="volet-tete__chapo">Vous suivez qui arrive, qui occupe quelle chambre et qui repart, sur chacun de vos sites. Quand une arrivée est confirmée ou qu’un départ est fait, la chambre change d’état toute seule.</p>
+          <div class="accueil__actions">
+            <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
+            <a class="lien-clair" href="https://logicamp.app">Connexion</a>
+          </div>
+        </div>
+        <figure class="volet-tete__photo">
+          <img class="photo photo--releve-large" src="/images/releve-avion.webp" width="1200" height="900" alt="Travailleurs, sacs à l’épaule, qui marchent vers un avion sur une piste de gravier">
+        </figure>
+      </section>
+    </div>
+
+    <section class="capture contenu" aria-label="Aperçu de l’application">
+        <figure class="portable">
+          <div class="portable__ecran"><img class="capture__image" src="/images/captures/sejours-1.webp" width="2000" height="1250" fetchpriority="high" alt="Écran « Chambres & Séjours » de Logicamp, vue « Aujourd’hui » : trois arrivées du jour avec le bouton « Confirmer l’arrivée »"></div>
+          <div class="portable__base" aria-hidden="true"></div>
+        </figure>
+        <p class="capture__note">Captures de l’application Logicamp, avec des données fictives.</p>
+    </section>
+
+    <section class="fonctions contenu" aria-labelledby="titre-fonctions">
+      <div class="fonctions__tete">
+        <p class="surtitre">Fonctionnalités</p>
+        <h2 id="titre-fonctions">Ce que vous faites dans les séjours</h2>
+        <p class="fonctions__acces">Logicamp s’ouvre sur un téléphone personnel ou sur un poste partagé au camp.</p>
+      </div>
+      <div class="fonctions__grille">
+          <article class="fonction">
+            <h3>Le tableau « Aujourd’hui »</h3>
+            <p>Arrivées du jour, départs du jour, présents et chambres prêtes sont sur le même écran. Les arrivées non confirmées et les départs dépassés ressortent en alerte.</p>
+          </article>
+          <article class="fonction">
+            <h3>Disponibilité validée</h3>
+            <p>À l’inscription d’un séjour, un calendrier montre les nuits déjà prises. Un séjour qui chevauche une réservation existante est refusé.</p>
+          </article>
+          <article class="fonction">
+            <h3>État des chambres automatique</h3>
+            <p>Confirmer une arrivée met la chambre à « Occupée ». Au départ, elle passe à « Entretien ménager », puis redevient disponible quand le ménage est terminé.</p>
+          </article>
+          <article class="fonction">
+            <h3>Départ automatique à midi</h3>
+            <p>Les séjours qui se terminent le jour même sont fermés automatiquement à midi, heure du camp.</p>
+          </article>
+          <article class="fonction">
+            <h3>Import d’une liste Excel</h3>
+            <p>Vous importez une liste de travailleurs à partir d’un fichier Excel : prénom, nom, téléphone, courriel.</p>
+          </article>
+          <article class="fonction">
+            <h3>Exports</h3>
+            <p>Les séjours s’exportent en Excel ou en CSV, et un rapport mensuel sort en PDF ou en Excel.</p>
+          </article>
+      </div>
+    </section>
+
+    <section class="apercus contenu" aria-label="Séjours dans l’application">
+      <div class="apercu">
+        <div class="apercu__texte">
+          <p class="surtitre">Disponibilité</p>
+          <h2>Un calendrier par chambre</h2>
+          <p>La vue « Calendrier » montre, pour chaque chambre, les nuits déjà réservées. Vous voyez ce qui est libre avant d’inscrire quelqu’un.</p>
+        </div>
+        <figure class="capture__cadre capture__cadre--petit">
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <img class="capture__image" src="/images/captures/sejours-2.webp" width="1500" height="1260" loading="lazy" alt="Vue « Calendrier » : les nuits réservées des chambres A-101 et A-102 sont marquées en rouge">
+        </figure>
+      </div>
+      <div class="apercu apercu--inverse">
+        <div class="apercu__texte">
+          <p class="surtitre">Nuitées</p>
+          <h2>Les nuitées, par entreprise et par projet</h2>
+          <p>Le rapport de facturation additionne les nuitées réellement passées pour la période que vous choisissez. Les entreprises externes, facturables, sont séparées de l’interne.</p>
+        </div>
+        <figure class="capture__cadre capture__cadre--petit">
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <img class="capture__image" src="/images/captures/sejours-3.webp" width="1500" height="959" loading="lazy" alt="Rapport de facturation : nuitées par entreprise et par projet, externes et internes">
+        </figure>
+      </div>
+    </section>
+
+    <section class="avantages" aria-labelledby="titre-avantages">
+      <div class="contenu">
+        <p class="surtitre surtitre--clair">Pour le gestionnaire de campement</p>
+        <h2 id="titre-avantages">Ce que ça change dans votre journée</h2>
+        <div class="avantages__grille">
+          <article class="avantage">
+            <h3>Vous savez qui arrive aujourd’hui</h3>
+            <p>Arrivées, départs et présents sont sur le même tableau, avec les chambres prêtes.</p>
+          </article>
+          <article class="avantage">
+            <h3>Pas de chambre attribuée deux fois</h3>
+            <p>Un séjour qui chevauche une réservation existante est refusé à l’inscription.</p>
+          </article>
+          <article class="avantage">
+            <h3>Les nuitées sont déjà comptées</h3>
+            <p>Le rapport les additionne par entreprise et par projet : rien à recompter à la main.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="autres" aria-labelledby="titre-autres">
+      <div class="contenu">
+        <p class="surtitre">Au quotidien</p>
+        <h2 id="titre-autres">Fonctionnalités complémentaires</h2>
+        <div class="autres__grille">
+          <a class="volet volet--carte" href="/chambres/">
+            <h3>Chambres</h3>
+            <p>Dortoirs, chambres et dépendances communes, avec leur état et leur capacité en temps réel.</p>
+            <span class="volet__suite">En savoir plus</span>
+          </a>
+          <a class="volet volet--carte" href="/menage/">
+            <h3>Ménage</h3>
+            <p>Un tableau des tâches de ménage, des listes de contrôle et des tâches créées à chaque départ.</p>
+            <span class="volet__suite">En savoir plus</span>
+          </a>
+          <a class="volet volet--carte" href="/reparations/">
+            <h3>Réparations</h3>
+            <p>Entretien préventif et bris du quotidien, avec les priorités, les interventions et les coûts.</p>
+            <span class="volet__suite">En savoir plus</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenu" aria-labelledby="titre-demo">
+      <div class="appel">
+        <div>
+          <h2 id="titre-demo">Demander une démonstration</h2>
+          <p>Écrivez-nous à info@logicamp.app. On vous montre comment l’outil suit les séjours, les chambres, le ménage et les réparations.</p>
+        </div>
+        <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pied contenu">
+    <span class="pied__marque"><img src="/images/logo-logicamp.png" alt="" width="24" height="24">© 2026 Logicamp</span>
+    <span class="pied__liens">
+      <a href="mailto:info@logicamp.app">info@logicamp.app</a>
+      <a href="https://logicamp.app">Connexion</a>
+    </span>
+  </footer>
+
+</body>
+</html>
