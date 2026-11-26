@@ -31,7 +31,7 @@
         <a href="/#quotidien">Au quotidien</a>
         <a href="/#secteurs">Secteurs</a>
         <a href="https://logicamp.app">Connexion</a>
-        <a class="pilule" href="mailto:info@logicamp.app">Demander une démo</a>
+        <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
       </nav>
     </div>
   </header>
@@ -39,47 +39,110 @@
   <main id="contenu">
     <div class="haut haut--volet">
       <section class="volet-tete contenu">
-        <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Chambres</p>
-        <h1>Vos chambres, telles qu’elles sont en ce moment</h1>
-        <p class="volet-tete__chapo">Dortoirs, chambres et dépendances communes : tout le camp est dans l’outil. Avant une arrivée, vous voyez quelles chambres sont à préparer.</p>
-        <div class="accueil__actions">
-          <a class="pilule" href="mailto:info@logicamp.app">Demander une démo</a>
-          <a class="lien-clair" href="https://logicamp.app">Connexion</a>
+        <div class="volet-tete__texte">
+          <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Chambres</p>
+          <h1>Vos chambres, telles qu’elles sont en ce moment</h1>
+          <p class="volet-tete__chapo">Dortoirs, chambres et dépendances communes : tout le camp est dans l’outil. Avant une arrivée, vous voyez quelles chambres sont à préparer.</p>
+          <div class="accueil__actions">
+            <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
+            <a class="lien-clair" href="https://logicamp.app">Connexion</a>
+          </div>
         </div>
+        <figure class="volet-tete__photo">
+          <img class="photo photo--camp-large" src="/images/gestionnaire-camp.webp" width="1448" height="1086" fetchpriority="high" alt="Gestionnaire de camp qui consulte une tablette dans le corridor des chambres">
+        </figure>
       </section>
     </div>
 
     <section class="capture contenu" aria-label="Aperçu de l’application">
-      <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-           <img class="capture__image" src="/images/captures/chambres.webp" alt="…"> -->
-      <figure class="capture__cadre">
-        <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-        <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : l’écran des chambres">Capture d’écran à fournir — l’écran des chambres</div>
-      </figure>
+        <figure class="capture__cadre">
+          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
+               <img class="capture__image" src="/images/captures/chambres-1.webp" alt="…"> -->
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : la vue d’ensemble des chambres">Capture d’écran à fournir — la vue d’ensemble des chambres</div>
+        </figure>
     </section>
 
-    <section class="points contenu" aria-label="Chambres en détail">
-        <article class="point">
-          <p class="surtitre">01</p>
-          <h2>Tout le camp au même endroit</h2>
-          <p>Vous gérez vos dortoirs, vos chambres et vos dépendances communes dans le même outil, site par site.</p>
-        </article>
-        <article class="point">
-          <p class="surtitre">02</p>
-          <h2>L’état en temps réel</h2>
-          <p>L’état de chaque chambre est suivi en temps réel. Avant une arrivée ou une relève, vous savez lesquelles sont à préparer.</p>
-        </article>
-        <article class="point">
-          <p class="surtitre">03</p>
-          <h2>Les capacités</h2>
-          <p>La capacité de chaque espace est suivie elle aussi : vous savez ce que chaque dortoir et chaque chambre peut recevoir.</p>
-        </article>
+    <section class="fonctions contenu" aria-labelledby="titre-fonctions">
+      <div class="fonctions__tete">
+        <p class="surtitre">Fonctionnalités</p>
+        <h2 id="titre-fonctions">Ce que vous gérez dans les chambres</h2>
+        <p class="fonctions__acces">Logicamp s’ouvre sur un téléphone personnel ou sur un poste partagé au camp.</p>
+      </div>
+      <div class="fonctions__grille">
+          <article class="fonction">
+            <h3>Dortoirs, chambres, dépendances</h3>
+            <p>Vous gérez vos dortoirs, vos chambres et vos dépendances communes dans le même outil.</p>
+          </article>
+          <article class="fonction">
+            <h3>États en temps réel</h3>
+            <p>L’état de chaque chambre est suivi en temps réel, site par site.</p>
+          </article>
+          <article class="fonction">
+            <h3>Capacités</h3>
+            <p>La capacité de chaque espace est suivie : vous savez ce que chaque dortoir et chaque chambre peut recevoir.</p>
+          </article>
+          <article class="fonction">
+            <h3>Préparation avant les arrivées</h3>
+            <p>Avant une arrivée ou une relève, vous voyez quelles chambres sont à préparer.</p>
+          </article>
+      </div>
+    </section>
+
+    <section class="apercus contenu" aria-label="Chambres dans l’application">
+      <div class="apercu">
+        <div class="apercu__texte">
+          <p class="surtitre">Avant une relève</p>
+          <h2>Les chambres à préparer, sans faire le tour</h2>
+          <p>La veille d’une relève, vous ouvrez l’outil et vous voyez l’état de chaque chambre. Pas besoin d’aller cogner aux portes pour savoir lesquelles sont prêtes.</p>
+        </div>
+        <figure class="capture__cadre capture__cadre--petit">
+          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
+               <img class="capture__image" src="/images/captures/chambres-2.webp" alt="…"> -->
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : les chambres à préparer">Capture d’écran à fournir — les chambres à préparer</div>
+        </figure>
+      </div>
+      <div class="apercu apercu--inverse">
+        <div class="apercu__texte">
+          <p class="surtitre">Site par site</p>
+          <h2>Tout le camp, pas seulement les chambres</h2>
+          <p>Les dortoirs et les dépendances communes sont suivis au même endroit que les chambres, avec leur état et leur capacité.</p>
+        </div>
+        <figure class="capture__cadre capture__cadre--petit">
+          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
+               <img class="capture__image" src="/images/captures/chambres-3.webp" alt="…"> -->
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : un dortoir ou une dépendance commune">Capture d’écran à fournir — un dortoir ou une dépendance commune</div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="avantages" aria-labelledby="titre-avantages">
+      <div class="contenu">
+        <p class="surtitre surtitre--clair">Pour le gestionnaire de campement</p>
+        <h2 id="titre-avantages">Ce que ça change dans votre journée</h2>
+        <div class="avantages__grille">
+          <article class="avantage">
+            <h3>L’état réel, pas celui d’hier</h3>
+            <p>L’état des chambres est suivi en temps réel : vous décidez avec la bonne information.</p>
+          </article>
+          <article class="avantage">
+            <h3>Les arrivées se préparent d’avance</h3>
+            <p>Vous savez quelles chambres préparer avant que le monde arrive.</p>
+          </article>
+          <article class="avantage">
+            <h3>Vous connaissez votre capacité</h3>
+            <p>Dortoir par dortoir, chambre par chambre, vous savez ce que le camp peut recevoir.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="autres" aria-labelledby="titre-autres">
       <div class="contenu">
         <p class="surtitre">Au quotidien</p>
-        <h2 id="titre-autres">Les autres volets</h2>
+        <h2 id="titre-autres">Fonctionnalités complémentaires</h2>
         <div class="autres__grille">
           <a class="volet volet--carte" href="/sejours/">
             <h3>Séjours</h3>
@@ -103,10 +166,10 @@
     <section class="contenu" aria-labelledby="titre-demo">
       <div class="appel">
         <div>
-          <h2 id="titre-demo">Demander une démo</h2>
+          <h2 id="titre-demo">Demander une démonstration</h2>
           <p>Écrivez-nous à info@logicamp.app. On vous montre comment l’outil suit les séjours, les chambres, le ménage et les réparations.</p>
         </div>
-        <a class="pilule" href="mailto:info@logicamp.app">Écrire à info@logicamp.app</a>
+        <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
       </div>
     </section>
   </main>

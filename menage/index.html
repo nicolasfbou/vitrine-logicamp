@@ -31,7 +31,7 @@
         <a href="/#quotidien">Au quotidien</a>
         <a href="/#secteurs">Secteurs</a>
         <a href="https://logicamp.app">Connexion</a>
-        <a class="pilule" href="mailto:info@logicamp.app">Demander une démo</a>
+        <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
       </nav>
     </div>
   </header>
@@ -39,47 +39,111 @@
   <main id="contenu">
     <div class="haut haut--volet">
       <section class="volet-tete contenu">
-        <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Ménage</p>
-        <h1>Le ménage, chambre par chambre</h1>
-        <p class="volet-tete__chapo">Les tâches de nettoyage sont dans un tableau que toute l’équipe voit. Vous répartissez le ménage entre les équipes, et les chambres à faire s’ajoutent d’elles-mêmes quand un séjour se termine.</p>
-        <div class="accueil__actions">
-          <a class="pilule" href="mailto:info@logicamp.app">Demander une démo</a>
-          <a class="lien-clair" href="https://logicamp.app">Connexion</a>
+        <div class="volet-tete__texte">
+          <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Ménage</p>
+          <h1>Le ménage, chambre par chambre</h1>
+          <p class="volet-tete__chapo">Les tâches de nettoyage sont dans un tableau que toute l’équipe voit. Vous répartissez le ménage entre les équipes, et les chambres à faire s’ajoutent d’elles-mêmes quand un séjour se termine.</p>
+          <div class="accueil__actions">
+            <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
+            <a class="lien-clair" href="https://logicamp.app">Connexion</a>
+          </div>
         </div>
+        <figure class="volet-tete__photo">
+          <!-- Photo à fournir : remplacer ce <div> par <img class="photo" src="/images/….webp" alt="…"> -->
+          <div class="photo photo--vide" role="img" aria-label="Photo à fournir : la préposée qui prépare une chambre">Photo à fournir — la préposée qui prépare une chambre</div>
+        </figure>
       </section>
     </div>
 
     <section class="capture contenu" aria-label="Aperçu de l’application">
-      <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-           <img class="capture__image" src="/images/captures/menage.webp" alt="…"> -->
-      <figure class="capture__cadre">
-        <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-        <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : le tableau du ménage">Capture d’écran à fournir — le tableau du ménage</div>
-      </figure>
+        <figure class="capture__cadre">
+          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
+               <img class="capture__image" src="/images/captures/menage-1.webp" alt="…"> -->
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : le tableau du ménage">Capture d’écran à fournir — le tableau du ménage</div>
+        </figure>
     </section>
 
-    <section class="points contenu" aria-label="Ménage en détail">
-        <article class="point">
-          <p class="surtitre">01</p>
-          <h2>Un tableau des tâches</h2>
-          <p>Les tâches de nettoyage sont présentées dans un tableau à colonnes (kanban). Chaque tâche avance d’une colonne à l’autre à mesure que le travail se fait.</p>
-        </article>
-        <article class="point">
-          <p class="surtitre">02</p>
-          <h2>Vos listes de vérification</h2>
-          <p>Les listes de vérification sont personnalisables : c’est vous qui décidez des points à vérifier dans une chambre.</p>
-        </article>
-        <article class="point">
-          <p class="surtitre">03</p>
-          <h2>Créées au départ</h2>
-          <p>Quand un séjour se termine, la tâche de ménage de la chambre est générée automatiquement. Il n’y a pas de liste à refaire chaque matin.</p>
-        </article>
+    <section class="fonctions contenu" aria-labelledby="titre-fonctions">
+      <div class="fonctions__tete">
+        <p class="surtitre">Fonctionnalités</p>
+        <h2 id="titre-fonctions">Ce que vous organisez dans le ménage</h2>
+        <p class="fonctions__acces">Logicamp s’ouvre sur un téléphone personnel ou sur un poste partagé au camp.</p>
+      </div>
+      <div class="fonctions__grille">
+          <article class="fonction">
+            <h3>Tableau des tâches</h3>
+            <p>Les tâches de nettoyage sont présentées dans un tableau à colonnes (kanban). Chaque tâche avance d’une colonne à l’autre à mesure que le travail se fait.</p>
+          </article>
+          <article class="fonction">
+            <h3>Listes de vérification</h3>
+            <p>Les listes de vérification sont personnalisables : c’est vous qui décidez des points à vérifier dans une chambre.</p>
+          </article>
+          <article class="fonction">
+            <h3>Tâches créées au départ</h3>
+            <p>Quand un séjour se termine, la tâche de ménage de la chambre est générée automatiquement.</p>
+          </article>
+          <article class="fonction">
+            <h3>Répartition entre les équipes</h3>
+            <p>Vous répartissez le ménage entre vos équipes.</p>
+          </article>
+      </div>
+    </section>
+
+    <section class="apercus contenu" aria-label="Ménage dans l’application">
+      <div class="apercu">
+        <div class="apercu__texte">
+          <p class="surtitre">Après un départ</p>
+          <h2>Un départ, une tâche de ménage</h2>
+          <p>Quand un séjour se termine, la tâche de ménage de la chambre est générée et apparaît dans le tableau. Personne n’a de liste à refaire le matin.</p>
+        </div>
+        <figure class="capture__cadre capture__cadre--petit">
+          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
+               <img class="capture__image" src="/images/captures/menage-2.webp" alt="…"> -->
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : une tâche de ménage">Capture d’écran à fournir — une tâche de ménage</div>
+        </figure>
+      </div>
+      <div class="apercu apercu--inverse">
+        <div class="apercu__texte">
+          <p class="surtitre">Dans la chambre</p>
+          <h2>Les mêmes points vérifiés partout</h2>
+          <p>Vous bâtissez vos listes de vérification à votre façon. D’une chambre à l’autre et d’une équipe à l’autre, on vérifie les mêmes points.</p>
+        </div>
+        <figure class="capture__cadre capture__cadre--petit">
+          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
+               <img class="capture__image" src="/images/captures/menage-3.webp" alt="…"> -->
+          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
+          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : une liste de vérification">Capture d’écran à fournir — une liste de vérification</div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="avantages" aria-labelledby="titre-avantages">
+      <div class="contenu">
+        <p class="surtitre surtitre--clair">Pour le gestionnaire de campement</p>
+        <h2 id="titre-avantages">Ce que ça change dans votre journée</h2>
+        <div class="avantages__grille">
+          <article class="avantage">
+            <h3>Plus de liste à refaire</h3>
+            <p>Les tâches de ménage se créent toutes seules à la fin des séjours.</p>
+          </article>
+          <article class="avantage">
+            <h3>Tout le monde voit où on en est</h3>
+            <p>Le tableau montre l’avancement du ménage, tâche par tâche.</p>
+          </article>
+          <article class="avantage">
+            <h3>Le travail est réparti</h3>
+            <p>Vous répartissez le ménage entre les équipes : chacune sait ce qu’elle a à faire.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="autres" aria-labelledby="titre-autres">
       <div class="contenu">
         <p class="surtitre">Au quotidien</p>
-        <h2 id="titre-autres">Les autres volets</h2>
+        <h2 id="titre-autres">Fonctionnalités complémentaires</h2>
         <div class="autres__grille">
           <a class="volet volet--carte" href="/sejours/">
             <h3>Séjours</h3>
@@ -103,10 +167,10 @@
     <section class="contenu" aria-labelledby="titre-demo">
       <div class="appel">
         <div>
-          <h2 id="titre-demo">Demander une démo</h2>
+          <h2 id="titre-demo">Demander une démonstration</h2>
           <p>Écrivez-nous à info@logicamp.app. On vous montre comment l’outil suit les séjours, les chambres, le ménage et les réparations.</p>
         </div>
-        <a class="pilule" href="mailto:info@logicamp.app">Écrire à info@logicamp.app</a>
+        <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
       </div>
     </section>
   </main>
