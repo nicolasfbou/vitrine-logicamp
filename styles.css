@@ -476,6 +476,14 @@ a:focus-visible {
   object-position: 30% 25%;
 }
 
+.photo--menage-large {
+  object-position: 45% 30%;
+}
+
+.photo--technicien-large {
+  object-position: 45% 35%;
+}
+
 /* Haut de page sans photo : une seule colonne. */
 .volet-tete--seul {
   grid-template-columns: 1fr;
