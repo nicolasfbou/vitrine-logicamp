@@ -379,6 +379,41 @@ a:focus-visible {
   transform: translateX(0.25rem);
 }
 
+/* Autres suivis : équipements, réservoirs, RFID, santé-sécurité, sur mesure */
+
+.plus {
+  padding: 6rem 0 0;
+}
+
+.plus h2 {
+  margin-top: 0.5rem;
+  max-width: 40rem;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  text-wrap: balance;
+}
+
+.plus__grille {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 3rem;
+  margin-top: 2.75rem;
+}
+
+.plus .fonction--mesure {
+  padding: 1.5rem 1.6rem 1.6rem;
+  border-top: 0;
+  border-radius: 1.2rem;
+  background: var(--nuit);
+}
+
+.fonction--mesure h3 {
+  color: var(--ambre);
+}
+
+.fonction--mesure p {
+  color: var(--texte-sur-nuit);
+}
+
 /* Secteurs */
 
 .secteurs {
@@ -847,6 +882,15 @@ a:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .plus {
+    padding-top: 4.5rem;
+  }
+
+  .plus__grille {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.25rem 2.5rem;
+  }
+
   .volet-tete,
   .fonctions,
   .apercu {
@@ -948,7 +992,8 @@ a:focus-visible {
     padding-top: 1.5rem;
   }
 
-  .fonctions__grille {
+  .fonctions__grille,
+  .plus__grille {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
