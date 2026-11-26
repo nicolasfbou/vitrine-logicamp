@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Séjours — Logicamp</title>
-  <meta name="description" content="Suivi des séjours dans Logicamp : arrivées, départs, nuitées par projet, état des chambres mis à jour automatiquement et validation des disponibilités.">
+  <meta name="description" content="Suivi des séjours dans Logicamp : arrivées et départs du jour, disponibilité validée, état des chambres mis à jour automatiquement et nuitées par entreprise et par projet.">
   <link rel="canonical" href="https://logicamp.ca/sejours/">
   <meta name="theme-color" content="#1a1e21">
   <link rel="icon" type="image/png" sizes="192x192" href="/images/logo-logicamp.png">
@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="Logicamp">
   <meta property="og:url" content="https://logicamp.ca/sejours/">
   <meta property="og:title" content="Séjours — Logicamp">
-  <meta property="og:description" content="Suivi des séjours dans Logicamp : arrivées, départs, nuitées par projet, état des chambres mis à jour automatiquement et validation des disponibilités.">
+  <meta property="og:description" content="Suivi des séjours dans Logicamp : arrivées et départs du jour, disponibilité validée, état des chambres mis à jour automatiquement et nuitées par entreprise et par projet.">
 
   <link rel="preload" href="/fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,49 +42,56 @@
         <div class="volet-tete__texte">
           <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Séjours</p>
           <h1>Les séjours, de l’arrivée au départ</h1>
-          <p class="volet-tete__chapo">Vous suivez qui arrive, qui occupe quelle chambre et qui repart, sur chacun de vos sites. Quand un séjour commence ou se termine, la chambre change d’état sans que vous ayez à y penser.</p>
+          <p class="volet-tete__chapo">Vous suivez qui arrive, qui occupe quelle chambre et qui repart, sur chacun de vos sites. Quand une arrivée est confirmée ou qu’un départ est fait, la chambre change d’état toute seule.</p>
           <div class="accueil__actions">
             <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
             <a class="lien-clair" href="https://logicamp.app">Connexion</a>
           </div>
         </div>
         <figure class="volet-tete__photo">
-          <img class="photo photo--releve-large" src="/images/releve-avion.webp" width="1200" height="900" fetchpriority="high" alt="Travailleurs, sacs à l’épaule, qui marchent vers un avion sur une piste de gravier">
+          <img class="photo photo--releve-large" src="/images/releve-avion.webp" width="1200" height="900" alt="Travailleurs, sacs à l’épaule, qui marchent vers un avion sur une piste de gravier">
         </figure>
       </section>
     </div>
 
     <section class="capture contenu" aria-label="Aperçu de l’application">
-        <figure class="capture__cadre">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/sejours-1.webp" alt="…"> -->
-          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : la liste des séjours">Capture d’écran à fournir — la liste des séjours</div>
+        <figure class="portable">
+          <div class="portable__ecran"><img class="capture__image" src="/images/captures/sejours-1.webp" width="2000" height="1250" fetchpriority="high" alt="Écran « Chambres & Séjours » de Logicamp, vue « Aujourd’hui » : trois arrivées du jour avec le bouton « Confirmer l’arrivée »"></div>
+          <div class="portable__base" aria-hidden="true"></div>
         </figure>
+        <p class="capture__note">Captures de l’application Logicamp, avec des données fictives.</p>
     </section>
 
     <section class="fonctions contenu" aria-labelledby="titre-fonctions">
       <div class="fonctions__tete">
         <p class="surtitre">Fonctionnalités</p>
-        <h2 id="titre-fonctions">Ce que vous suivez dans les séjours</h2>
+        <h2 id="titre-fonctions">Ce que vous faites dans les séjours</h2>
         <p class="fonctions__acces">Logicamp s’ouvre sur un téléphone personnel ou sur un poste partagé au camp.</p>
       </div>
       <div class="fonctions__grille">
           <article class="fonction">
-            <h3>Arrivées et départs</h3>
-            <p>Chaque séjour a sa date d’arrivée et sa date de départ. Vous voyez qui s’en vient et qui s’en va, site par site.</p>
+            <h3>Le tableau « Aujourd’hui »</h3>
+            <p>Arrivées du jour, départs du jour, présents et chambres prêtes sont sur le même écran. Les arrivées non confirmées et les départs dépassés ressortent en alerte.</p>
           </article>
           <article class="fonction">
-            <h3>Nuitées par projet</h3>
-            <p>Les séjours sont suivis par projet : vous savez combien de nuitées chacun a prises.</p>
+            <h3>Disponibilité validée</h3>
+            <p>À l’inscription d’un séjour, un calendrier montre les nuits déjà prises. Un séjour qui chevauche une réservation existante est refusé.</p>
           </article>
           <article class="fonction">
             <h3>État des chambres automatique</h3>
-            <p>Quand un séjour commence ou se termine, l’état de la chambre se met à jour tout seul.</p>
+            <p>Confirmer une arrivée met la chambre à « Occupée ». Au départ, elle passe à « Entretien ménager », puis redevient disponible quand le ménage est terminé.</p>
           </article>
           <article class="fonction">
-            <h3>Validation des disponibilités</h3>
-            <p>Avant de confirmer un séjour, l’outil valide que la chambre est disponible.</p>
+            <h3>Départ automatique à midi</h3>
+            <p>Les séjours qui se terminent le jour même sont fermés automatiquement à midi, heure du camp.</p>
+          </article>
+          <article class="fonction">
+            <h3>Import d’une liste Excel</h3>
+            <p>Vous importez une liste de travailleurs à partir d’un fichier Excel : prénom, nom, téléphone, courriel.</p>
+          </article>
+          <article class="fonction">
+            <h3>Exports</h3>
+            <p>Les séjours s’exportent en Excel ou en CSV, et un rapport mensuel sort en PDF ou en Excel.</p>
           </article>
       </div>
     </section>
@@ -92,28 +99,24 @@
     <section class="apercus contenu" aria-label="Séjours dans l’application">
       <div class="apercu">
         <div class="apercu__texte">
-          <p class="surtitre">À l’arrivée</p>
-          <h2>Une chambre libre, confirmée d’avance</h2>
-          <p>Vous inscrivez le séjour et l’outil valide la disponibilité de la chambre. Si elle est déjà prise, vous le savez tout de suite, pas le soir où le travailleur débarque.</p>
+          <p class="surtitre">Disponibilité</p>
+          <h2>Un calendrier par chambre</h2>
+          <p>La vue « Calendrier » montre, pour chaque chambre, les nuits déjà réservées. Vous voyez ce qui est libre avant d’inscrire quelqu’un.</p>
         </div>
         <figure class="capture__cadre capture__cadre--petit">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/sejours-2.webp" alt="…"> -->
           <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : l’inscription d’un séjour">Capture d’écran à fournir — l’inscription d’un séjour</div>
+          <img class="capture__image" src="/images/captures/sejours-2.webp" width="1500" height="1260" loading="lazy" alt="Vue « Calendrier » : les nuits réservées des chambres A-101 et A-102 sont marquées en rouge">
         </figure>
       </div>
       <div class="apercu apercu--inverse">
         <div class="apercu__texte">
-          <p class="surtitre">Au départ</p>
-          <h2>Le départ déclenche la suite</h2>
-          <p>Quand le séjour se termine, la chambre change d’état et la tâche de ménage est créée. La chambre repart dans le circuit sans que vous ayez à avertir personne.</p>
+          <p class="surtitre">Nuitées</p>
+          <h2>Les nuitées, par entreprise et par projet</h2>
+          <p>Le rapport de facturation additionne les nuitées réellement passées pour la période que vous choisissez. Les entreprises externes, facturables, sont séparées de l’interne.</p>
         </div>
         <figure class="capture__cadre capture__cadre--petit">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/sejours-3.webp" alt="…"> -->
           <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : la fiche d’un séjour">Capture d’écran à fournir — la fiche d’un séjour</div>
+          <img class="capture__image" src="/images/captures/sejours-3.webp" width="1500" height="959" loading="lazy" alt="Rapport de facturation : nuitées par entreprise et par projet, externes et internes">
         </figure>
       </div>
     </section>
@@ -124,16 +127,16 @@
         <h2 id="titre-avantages">Ce que ça change dans votre journée</h2>
         <div class="avantages__grille">
           <article class="avantage">
-            <h3>Vous savez qui est au camp</h3>
-            <p>Arrivées, occupants, départs : l’information est au même endroit pour tous vos sites.</p>
+            <h3>Vous savez qui arrive aujourd’hui</h3>
+            <p>Arrivées, départs et présents sont sur le même tableau, avec les chambres prêtes.</p>
           </article>
           <article class="avantage">
             <h3>Pas de chambre attribuée deux fois</h3>
-            <p>La disponibilité est validée avant que le séjour soit confirmé.</p>
+            <p>Un séjour qui chevauche une réservation existante est refusé à l’inscription.</p>
           </article>
           <article class="avantage">
-            <h3>Les nuitées, projet par projet</h3>
-            <p>Vous suivez les nuitées de chaque projet à même les séjours.</p>
+            <h3>Les nuitées sont déjà comptées</h3>
+            <p>Le rapport les additionne par entreprise et par projet : rien à recompter à la main.</p>
           </article>
         </div>
       </div>
@@ -146,12 +149,12 @@
         <div class="autres__grille">
           <a class="volet volet--carte" href="/chambres/">
             <h3>Chambres</h3>
-            <p>Dortoirs, chambres et espaces communs, avec leur état et leur capacité en temps réel.</p>
+            <p>Dortoirs, chambres et dépendances communes, avec leur état et leur capacité en temps réel.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
           <a class="volet volet--carte" href="/menage/">
             <h3>Ménage</h3>
-            <p>Un tableau des tâches de nettoyage, des listes de vérification et des tâches créées au départ.</p>
+            <p>Un tableau des tâches de ménage, des listes de contrôle et des tâches créées à chaque départ.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
           <a class="volet volet--carte" href="/reparations/">

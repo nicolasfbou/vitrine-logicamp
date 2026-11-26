@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Réparations — Logicamp</title>
-  <meta name="description" content="Maintenance dans Logicamp : entretien préventif et réparations, avec le suivi des priorités, des interventions et des coûts.">
+  <meta name="description" content="Maintenance dans Logicamp : tâches préventives et correctives, quatre priorités, coûts et temps, signalement d’un bris sur téléphone ou par code QR.">
   <link rel="canonical" href="https://logicamp.ca/reparations/">
   <meta name="theme-color" content="#1a1e21">
   <link rel="icon" type="image/png" sizes="192x192" href="/images/logo-logicamp.png">
@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="Logicamp">
   <meta property="og:url" content="https://logicamp.ca/reparations/">
   <meta property="og:title" content="Réparations — Logicamp">
-  <meta property="og:description" content="Maintenance dans Logicamp : entretien préventif et réparations, avec le suivi des priorités, des interventions et des coûts.">
+  <meta property="og:description" content="Maintenance dans Logicamp : tâches préventives et correctives, quatre priorités, coûts et temps, signalement d’un bris sur téléphone ou par code QR.">
 
   <link rel="preload" href="/fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,25 +42,25 @@
         <div class="volet-tete__texte">
           <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Réparations</p>
           <h1>Les réparations, sans rien échapper</h1>
-          <p class="volet-tete__chapo">L’entretien prévu d’avance et les bris du quotidien sont au même endroit. Vous savez ce qui reste à faire sur chaque site, ce qui presse et ce que ça a coûté.</p>
+          <p class="volet-tete__chapo">L’entretien prévu d’avance et les bris du quotidien sont au même endroit, avec leur priorité, la personne assignée et ce que ça a coûté.</p>
           <div class="accueil__actions">
             <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
             <a class="lien-clair" href="https://logicamp.app">Connexion</a>
           </div>
         </div>
         <figure class="volet-tete__photo">
-          <img class="photo photo--civil-large" src="/images/secteur-genie-civil.webp" width="1200" height="900" fetchpriority="high" alt="Deux travailleurs qui consultent des plans sur un chantier">
+          <!-- Photo à fournir : remplacer ce <div> par <img class="photo" src="/images/….webp" alt="…"> -->
+          <div class="photo photo--vide" role="img" aria-label="Photo à fournir : le technicien de maintenance">Photo à fournir — le technicien de maintenance</div>
         </figure>
       </section>
     </div>
 
     <section class="capture contenu" aria-label="Aperçu de l’application">
-        <figure class="capture__cadre">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/reparations-1.webp" alt="…"> -->
-          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : la liste des réparations">Capture d’écran à fournir — la liste des réparations</div>
+        <figure class="portable">
+          <div class="portable__ecran"><img class="capture__image" src="/images/captures/reparations-1.webp" width="2000" height="1181" fetchpriority="high" alt="Écran « Maintenance » de Logicamp : tâches préventives et correctives avec leur statut, leur priorité et la personne assignée"></div>
+          <div class="portable__base" aria-hidden="true"></div>
         </figure>
+        <p class="capture__note">Captures de l’application Logicamp, avec des données fictives.</p>
     </section>
 
     <section class="fonctions contenu" aria-labelledby="titre-fonctions">
@@ -71,20 +71,28 @@
       </div>
       <div class="fonctions__grille">
           <article class="fonction">
-            <h3>Entretien préventif</h3>
-            <p>Vous organisez l’entretien prévu d’avance, avant que ça brise.</p>
+            <h3>Préventif et correctif</h3>
+            <p>Chaque tâche est préventive ou corrective. Une tâche récurrente, de quotidienne à trimestrielle, se recrée quand elle est terminée.</p>
           </article>
           <article class="fonction">
-            <h3>Entretien correctif</h3>
-            <p>Quand quelque chose brise, la réparation est inscrite et suivie jusqu’au bout.</p>
+            <h3>Quatre priorités</h3>
+            <p>Basse, moyenne, haute, urgente. Les tâches en retard et les tâches non assignées sont signalées.</p>
           </article>
           <article class="fonction">
-            <h3>Priorités</h3>
-            <p>Chaque réparation a sa priorité. L’équipe voit ce qui doit passer en premier.</p>
+            <h3>Coûts et temps</h3>
+            <p>Coût estimé et coût réel, temps estimé et temps déclaré, nom du réparateur.</p>
           </article>
           <article class="fonction">
-            <h3>Interventions et coûts</h3>
-            <p>Vous suivez les interventions faites et ce qu’elles ont coûté.</p>
+            <h3>Signaler un bris</h3>
+            <p>Un employé connecté signale un bris en quelques secondes, avec une photo au besoin. La demande arrive dans « Nouvelles demandes ».</p>
+          </article>
+          <article class="fonction">
+            <h3>Demande par code QR</h3>
+            <p>Un code QR par camp ou par bâtiment ouvre un formulaire de demande de maintenance, sans compte.</p>
+          </article>
+          <article class="fonction">
+            <h3>Assignation</h3>
+            <p>Vous assignez une tâche à une ou plusieurs personnes, avec un responsable principal et une date limite.</p>
           </article>
       </div>
     </section>
@@ -92,29 +100,24 @@
     <section class="apercus contenu" aria-label="Réparations dans l’application">
       <div class="apercu">
         <div class="apercu__texte">
-          <p class="surtitre">Quand ça brise</p>
-          <h2>Ce qui presse passe en premier</h2>
-          <p>Une réparation est inscrite avec sa priorité. Votre équipe d’entretien voit ce qui doit se faire aujourd’hui et ce qui peut attendre.</p>
+          <p class="surtitre">Suivi</p>
+          <h2>Chaque intervention laisse une trace</h2>
+          <p>Sur la fiche d’une tâche, l’onglet « Activité » garde le fil : qui a été assigné, quand le travail a commencé, ce qui a été fait.</p>
         </div>
         <figure class="capture__cadre capture__cadre--petit">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/reparations-2.webp" alt="…"> -->
           <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : une réparation et sa priorité">Capture d’écran à fournir — une réparation et sa priorité</div>
+          <img class="capture__image" src="/images/captures/reparations-2.webp" width="1500" height="1260" loading="lazy" alt="Fiche d’une réparation urgente, onglet « Activité » : création, assignation, début du travail et travail effectué">
         </figure>
       </div>
       <div class="apercu apercu--inverse">
         <div class="apercu__texte">
-          <p class="surtitre">Avant que ça brise</p>
-          <h2>L’entretien préventif, prévu d’avance</h2>
-          <p>L’entretien préventif est organisé dans le même outil que les réparations. Vous gardez la liste de ce qui reste à faire sur chaque site.</p>
+          <p class="surtitre">Sur le terrain</p>
+          <h2>Un bris signalé en quelques secondes</h2>
+          <p>Où est le problème, que se passe-t-il, quelle priorité, une photo au besoin : le signalement part du téléphone et arrive chez le responsable.</p>
         </div>
-        <figure class="capture__cadre capture__cadre--petit">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/reparations-3.webp" alt="…"> -->
-          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : l’entretien préventif">Capture d’écran à fournir — l’entretien préventif</div>
-        </figure>
+        <div class="scene">
+          <figure class="telephone"><img class="capture__image" src="/images/captures/reparations-3.webp" width="780" height="1688" loading="lazy" alt="Formulaire « Signaler un bris » sur téléphone : lieu, description, priorité perçue et photo"></figure>
+        </div>
       </div>
     </section>
 
@@ -124,16 +127,16 @@
         <h2 id="titre-avantages">Ce que ça change dans votre journée</h2>
         <div class="avantages__grille">
           <article class="avantage">
-            <h3>Rien ne reste sur un bout de papier</h3>
-            <p>Les réparations à faire sont inscrites et suivies, site par site.</p>
-          </article>
-          <article class="avantage">
             <h3>Les urgences d’abord</h3>
             <p>Les priorités disent à l’équipe par où commencer.</p>
           </article>
           <article class="avantage">
+            <h3>Rien ne reste sur un bout de papier</h3>
+            <p>Un bris signalé devient une demande suivie jusqu’à sa fermeture.</p>
+          </article>
+          <article class="avantage">
             <h3>Vous savez ce que ça coûte</h3>
-            <p>Les coûts des interventions sont suivis avec les réparations.</p>
+            <p>Le coût réel et le temps déclaré sont notés à la fermeture de la tâche.</p>
           </article>
         </div>
       </div>
@@ -146,17 +149,17 @@
         <div class="autres__grille">
           <a class="volet volet--carte" href="/sejours/">
             <h3>Séjours</h3>
-            <p>Arrivées, départs et nuitées par projet. L’état des chambres suit tout seul.</p>
+            <p>Arrivées, départs et nuitées par entreprise et par projet. L’état des chambres suit tout seul.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
           <a class="volet volet--carte" href="/chambres/">
             <h3>Chambres</h3>
-            <p>Dortoirs, chambres et espaces communs, avec leur état et leur capacité en temps réel.</p>
+            <p>Dortoirs, chambres et dépendances communes, avec leur état et leur capacité en temps réel.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
           <a class="volet volet--carte" href="/menage/">
             <h3>Ménage</h3>
-            <p>Un tableau des tâches de nettoyage, des listes de vérification et des tâches créées au départ.</p>
+            <p>Un tableau des tâches de ménage, des listes de contrôle et des tâches créées à chaque départ.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
         </div>

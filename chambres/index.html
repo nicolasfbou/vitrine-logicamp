@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Chambres — Logicamp</title>
-  <meta name="description" content="Gestion des chambres dans Logicamp : dortoirs, chambres et dépendances communes, avec le suivi en temps réel des états et des capacités.">
+  <meta name="description" content="Gestion des chambres dans Logicamp : dortoirs, chambres et dépendances communes, cinq états de chambre suivis en temps réel, capacités et filtres.">
   <link rel="canonical" href="https://logicamp.ca/chambres/">
   <meta name="theme-color" content="#1a1e21">
   <link rel="icon" type="image/png" sizes="192x192" href="/images/logo-logicamp.png">
@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="Logicamp">
   <meta property="og:url" content="https://logicamp.ca/chambres/">
   <meta property="og:title" content="Chambres — Logicamp">
-  <meta property="og:description" content="Gestion des chambres dans Logicamp : dortoirs, chambres et dépendances communes, avec le suivi en temps réel des états et des capacités.">
+  <meta property="og:description" content="Gestion des chambres dans Logicamp : dortoirs, chambres et dépendances communes, cinq états de chambre suivis en temps réel, capacités et filtres.">
 
   <link rel="preload" href="/fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -42,25 +42,24 @@
         <div class="volet-tete__texte">
           <p class="fil"><a href="/#quotidien">Au quotidien</a> <span aria-hidden="true">/</span> Chambres</p>
           <h1>Vos chambres, telles qu’elles sont en ce moment</h1>
-          <p class="volet-tete__chapo">Dortoirs, chambres et dépendances communes : tout le camp est dans l’outil. Avant une arrivée, vous voyez quelles chambres sont à préparer.</p>
+          <p class="volet-tete__chapo">Dortoirs, chambres et dépendances communes : tout le camp est dans l’outil, avec l’état de chaque chambre en ce moment.</p>
           <div class="accueil__actions">
             <a class="pilule" href="mailto:info@logicamp.app">Demander une démonstration</a>
             <a class="lien-clair" href="https://logicamp.app">Connexion</a>
           </div>
         </div>
         <figure class="volet-tete__photo">
-          <img class="photo photo--camp-large" src="/images/gestionnaire-camp.webp" width="1448" height="1086" fetchpriority="high" alt="Gestionnaire de camp qui consulte une tablette dans le corridor des chambres">
+          <img class="photo photo--camp-large" src="/images/gestionnaire-camp.webp" width="1448" height="1086" alt="Gestionnaire de camp qui consulte une tablette dans le corridor des chambres">
         </figure>
       </section>
     </div>
 
     <section class="capture contenu" aria-label="Aperçu de l’application">
-        <figure class="capture__cadre">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/chambres-1.webp" alt="…"> -->
-          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : la vue d’ensemble des chambres">Capture d’écran à fournir — la vue d’ensemble des chambres</div>
+        <figure class="portable">
+          <div class="portable__ecran"><img class="capture__image" src="/images/captures/chambres-1.webp" width="2000" height="1250" fetchpriority="high" alt="Écran « Chambres & Séjours » de Logicamp, vue « Chambres » : compteurs et cartes des chambres du Dortoir A avec leur état"></div>
+          <div class="portable__base" aria-hidden="true"></div>
         </figure>
+        <p class="capture__note">Captures de l’application Logicamp, avec des données fictives.</p>
     </section>
 
     <section class="fonctions contenu" aria-labelledby="titre-fonctions">
@@ -72,19 +71,27 @@
       <div class="fonctions__grille">
           <article class="fonction">
             <h3>Dortoirs, chambres, dépendances</h3>
-            <p>Vous gérez vos dortoirs, vos chambres et vos dépendances communes dans le même outil.</p>
+            <p>Vous créez vos dortoirs et leurs chambres (numéro, étage, nombre de lits), et vos dépendances communes : cuisine, salle commune, buanderie, gym.</p>
           </article>
           <article class="fonction">
-            <h3>États en temps réel</h3>
-            <p>L’état de chaque chambre est suivi en temps réel, site par site.</p>
+            <h3>Cinq états de chambre</h3>
+            <p>Disponible, Occupée, Entretien ménager, En maintenance, À vérifier : chaque chambre porte son état, avec sa couleur.</p>
+          </article>
+          <article class="fonction">
+            <h3>Compteurs qui filtrent</h3>
+            <p>Occupées, disponibles, à nettoyer, en maintenance, arrivées et départs du jour : un clic sur un compteur filtre la liste.</p>
           </article>
           <article class="fonction">
             <h3>Capacités</h3>
-            <p>La capacité de chaque espace est suivie : vous savez ce que chaque dortoir et chaque chambre peut recevoir.</p>
+            <p>Chaque dortoir a sa capacité, chaque chambre son nombre de lits, chaque dépendance sa capacité.</p>
           </article>
           <article class="fonction">
-            <h3>Préparation avant les arrivées</h3>
-            <p>Avant une arrivée ou une relève, vous voyez quelles chambres sont à préparer.</p>
+            <h3>Recherche</h3>
+            <p>Vous cherchez par occupant, entreprise, chambre ou dortoir, et vous filtrez par dortoir ou par état.</p>
+          </article>
+          <article class="fonction">
+            <h3>Plusieurs campements</h3>
+            <p>Vous gérez plusieurs camps dans le même compte et vous passez de l’un à l’autre avec le sélecteur en haut de l’écran.</p>
           </article>
       </div>
     </section>
@@ -92,29 +99,24 @@
     <section class="apercus contenu" aria-label="Chambres dans l’application">
       <div class="apercu">
         <div class="apercu__texte">
-          <p class="surtitre">Avant une relève</p>
-          <h2>Les chambres à préparer, sans faire le tour</h2>
-          <p>La veille d’une relève, vous ouvrez l’outil et vous voyez l’état de chaque chambre. Pas besoin d’aller cogner aux portes pour savoir lesquelles sont prêtes.</p>
+          <p class="surtitre">Bâtiments</p>
+          <h2>Tout le camp, pas seulement les chambres</h2>
+          <p>La page « Bâtiments » liste vos dortoirs avec leurs chambres, leurs places occupées et disponibles, et vos dépendances communes avec leur capacité.</p>
         </div>
         <figure class="capture__cadre capture__cadre--petit">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/chambres-2.webp" alt="…"> -->
           <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : les chambres à préparer">Capture d’écran à fournir — les chambres à préparer</div>
+          <img class="capture__image" src="/images/captures/chambres-2.webp" width="1500" height="856" loading="lazy" alt="Page « Bâtiments » : trois dortoirs et quatre dépendances communes avec leur capacité">
         </figure>
       </div>
       <div class="apercu apercu--inverse">
         <div class="apercu__texte">
-          <p class="surtitre">Site par site</p>
-          <h2>Tout le camp, pas seulement les chambres</h2>
-          <p>Les dortoirs et les dépendances communes sont suivis au même endroit que les chambres, avec leur état et leur capacité.</p>
+          <p class="surtitre">Sur le terrain</p>
+          <h2>L’état des chambres, dans la poche</h2>
+          <p>L’écran « État des chambres » donne aux équipes d’accueil et de ménage l’état de chaque chambre, dortoir par dortoir, sur leur téléphone.</p>
         </div>
-        <figure class="capture__cadre capture__cadre--petit">
-          <!-- Capture à fournir : remplacer le <div class="capture__vide"> par
-               <img class="capture__image" src="/images/captures/chambres-3.webp" alt="…"> -->
-          <div class="capture__barre" aria-hidden="true"><span></span><span></span><span></span><b>logicamp.app</b></div>
-          <div class="capture__vide" role="img" aria-label="Capture d’écran à fournir : un dortoir ou une dépendance commune">Capture d’écran à fournir — un dortoir ou une dépendance commune</div>
-        </figure>
+        <div class="scene">
+          <figure class="telephone"><img class="capture__image" src="/images/captures/chambres-3.webp" width="780" height="1688" loading="lazy" alt="Écran « État des chambres » sur téléphone : chambres du Dortoir A, occupées ou en entretien ménager"></figure>
+        </div>
       </div>
     </section>
 
@@ -125,11 +127,11 @@
         <div class="avantages__grille">
           <article class="avantage">
             <h3>L’état réel, pas celui d’hier</h3>
-            <p>L’état des chambres est suivi en temps réel : vous décidez avec la bonne information.</p>
+            <p>Les états changent avec les arrivées, les départs et le ménage.</p>
           </article>
           <article class="avantage">
-            <h3>Les arrivées se préparent d’avance</h3>
-            <p>Vous savez quelles chambres préparer avant que le monde arrive.</p>
+            <h3>Les chambres à nettoyer ressortent</h3>
+            <p>Après un départ, la chambre reste à « Entretien ménager » jusqu’à ce que le ménage soit fait.</p>
           </article>
           <article class="avantage">
             <h3>Vous connaissez votre capacité</h3>
@@ -146,12 +148,12 @@
         <div class="autres__grille">
           <a class="volet volet--carte" href="/sejours/">
             <h3>Séjours</h3>
-            <p>Arrivées, départs et nuitées par projet. L’état des chambres suit tout seul.</p>
+            <p>Arrivées, départs et nuitées par entreprise et par projet. L’état des chambres suit tout seul.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
           <a class="volet volet--carte" href="/menage/">
             <h3>Ménage</h3>
-            <p>Un tableau des tâches de nettoyage, des listes de vérification et des tâches créées au départ.</p>
+            <p>Un tableau des tâches de ménage, des listes de contrôle et des tâches créées à chaque départ.</p>
             <span class="volet__suite">En savoir plus</span>
           </a>
           <a class="volet volet--carte" href="/reparations/">
