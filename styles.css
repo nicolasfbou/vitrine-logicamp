@@ -476,17 +476,13 @@ a:focus-visible {
   object-position: 30% 25%;
 }
 
-/* Emplacement temporaire, en attendant la vraie photo. */
-.photo--vide {
-  display: grid;
-  place-items: center;
-  padding: 1.5rem;
-  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 16px), #2b3237;
-  font-size: 0.8125rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.72);
+/* Haut de page sans photo : une seule colonne. */
+.volet-tete--seul {
+  grid-template-columns: 1fr;
+}
+
+.volet-tete--seul .volet-tete__texte {
+  max-width: 46rem;
 }
 
 /* Captures d'écran de l'application, dans un cadre de navigateur. */
